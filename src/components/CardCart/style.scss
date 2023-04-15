@@ -1,0 +1,73 @@
+@import "../../assets/styles/color";
+.card-cart{
+    width: 600px;
+    height: 160px;
+    border: 1px solid;
+    display: flex;
+    gap: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 10px 0;
+    
+    .image{
+        width: 210px;
+        height: 160px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;height: 100%;
+            object-fit: cover;
+        }
+    }
+    .detals{
+        padding: 8px;
+        width: 310px;
+    }
+    p.cat{
+        margin: 4px 0;
+    }
+    span{
+        margin-left: 3px;
+    }
+    p.price{
+        font-size: 19px;
+        font-weight: bold;
+    }
+    .count{
+        display: flex;
+        justify-content: start;
+        margin-top: 8px;
+        select{
+            width: 30%;
+            padding: 4px;
+            border: 1px solid #ddd;
+            outline: none;
+            
+        }
+    }
+    .action{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        
+    }
+}
+
+@media screen and (max-width : 560px) {
+    .card-cart{
+        flex-direction: column;
+        width: 210px;
+        height: auto;
+        padding-bottom: 8px;
+        h3{
+            font-size: 16px;
+            max-width: 210px;
+        }
+        .action{
+            justify-content: center;
+            width: 100%;
+        }
+    }
+
+}

@@ -1,0 +1,24 @@
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-decoration: none;
+  margin: 0; padding: 0;
+
+}
+
+.container {
+  width: calc(100% - 100px);
+  margin: auto;
+}
+@media screen and (min-width : 1300px) {
+   .container{
+      width: 1220px;
+   }
+}
+
+@media screen and (max-width : 560px) {
+  .container{
+     width: calc(100% - 50px) !important;
+  }
+}

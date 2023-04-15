@@ -1,0 +1,23 @@
+@import "../../assets/styles/color";
+
+.button {
+  background-color: $green;
+  border: none;
+  padding: 8px 12px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid $green;
+  &:hover {
+    filter: brightness(80%);
+  }
+  &:active {
+    background-color: white;
+    color: $green;
+  }
+  &.outline{
+     background-color: white;
+     color: $green;
+     border: 1px solid $green;
+  }
+}

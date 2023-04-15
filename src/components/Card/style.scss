@@ -1,0 +1,70 @@
+@import "../../assets/styles/color";
+
+.card{
+    position: relative;
+    height: 400px;
+    width: 220px;
+    border: 1px solid $second-color;
+    cursor: pointer;
+    .image{
+        position: relative;
+        width: 100%;
+        height: 200px;
+        overflow: hidden;
+      
+        img{
+            position: absolute;
+            top: 0;left: 0;
+            width: 100%; height: 100%;
+            object-fit: cover;
+            transition: all 0.5s;
+            
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    .details{
+        padding: 12px;
+        h3{
+            font-size: 16px;
+            margin-bottom: 3px;
+        }
+        p.category{
+            font-size: 14px;
+            margin: 4px 0;
+        }
+        span{
+            margin: 0 3px;
+        }
+        P.price{
+            width: 100%;
+            text-align: center;
+            font-size: 17px ;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+
+    }
+    .btn{
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            background-color: $green;
+            border: none;
+            padding: 8px 12px;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            &:hover{
+                filter: brightness(80%);
+            }
+            &:active{
+                background-color: white;
+                color: $green;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import "../../assets/styles/color" ;
+
+.home {
+    .products{
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 5px;
+    }
+    .filter{
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+}
+
+@media screen and (max-width : 560px) {
+    .home {
+        .products{
+           justify-content: center;
+        }
+    }
+}
